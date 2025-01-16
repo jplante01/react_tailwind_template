@@ -3,6 +3,7 @@ import globals from 'globals'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import tailwind from "eslint-plugin-tailwindcss"
 
 export default [
   { ignores: ['dist'] },
@@ -10,18 +11,25 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      sourceType: 'module',
       parserOptions: {
-        ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
-        sourceType: 'module',
       },
+      globals: {
+        ...globals.browser
+      }
     },
-    settings: { react: { version: '18.3' } },
+    settings: { 
+      react: { version: '18.3' },
+      tailwindcss: {
+        callees: ['cn', 'clsx']
+      }
+    },
     plugins: {
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      tailwindcss: tailwind
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -31,8 +39,10 @@ export default [
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
-        { allowConstantExport: true },
+        { allowConstantExport: true }
       ],
-    },
-  },
+      'tailwindcss/classnames-order': 'warn',
+      'tailwindcss/no-contradicting-classname': 'error'
+    }
+  }
 ]
