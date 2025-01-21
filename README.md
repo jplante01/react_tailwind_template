@@ -1,5 +1,3 @@
-Here's an enhanced version of your README with some GitHub-flavored markdown features to make it look more professional:
-
 # react_tailwind_template v1.0.0
 
 <p align="center">
