@@ -65,19 +65,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
-
-<p align="center">
-  Made with ❤️ by [Your Name/Organization]
-</p>
-
-Citations:
-[1] https://www.freecodecamp.org/news/create-a-github-template-repository-with-react-vite-and-tailwindcss/
-[2] https://www.youtube.com/watch?v=k1TM5mSySik
-[3] https://www.geeksforgeeks.org/create-documentation-template-using-react-and-tailwind-css/
-[4] https://tailwindcss.com/docs/guides/create-react-app
-[5] https://cruip.com/docs/react-templates-tailwind-css/
-[6] https://www.reddit.com/r/reactjs/comments/mzpn3o/i_made_a_free_dashboard_template_using_tailwind/
-[7] https://github.com/kazmi066/react-tailwind-rtk-starter
-[8] https://www.contentful.com/blog/react-app-tailwind-css/
-[9] https://www.youtube.com/watch?v=Zk2YJUvfsOA
